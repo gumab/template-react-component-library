@@ -2,11 +2,10 @@ import React from "react";
 import "./Button.scss";
 
 export interface ButtonProps {
-  label: string;
+    label: string;
+    substring: string
 }
 
-const Button = (props: ButtonProps) => {
-  return <button>{props.label}</button>;
-};
-
-export default Button;
+export default function Button(props: ButtonProps) {
+    return <button>{props.label}<span>{props.substring}</span></button>;
+}

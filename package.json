@@ -1,11 +1,13 @@
 {
   "name": "@gumab/template-react-component-library",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/YOUR_REPOSITORY_NAME"
+    "registry": "https://npm.pkg.github.com/gumab/template-react-component-library"
   },
   "version": "0.1.0",
   "description": "A simple template for a custom React component library",
   "scripts": {
+    "start": "npm run storybook",
+    "build": "npm run rollup",
     "rollup": "rollup -c",
     "test": "jest",
     "storybook": "start-storybook -p 6006",

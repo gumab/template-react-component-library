@@ -1,2 +1,2 @@
 export * from './components';
-export {Header} from './stories/Header'
+export { Header } from './stories/Header';
